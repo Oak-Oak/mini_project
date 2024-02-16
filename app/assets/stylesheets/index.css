@@ -1,0 +1,134 @@
+body {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    color: azure;
+    overflow: hidden;
+}
+
+.title{
+    font-size: 4vw;
+    padding-top: 0;
+}
+
+.label{
+    font-size: 1.5vw;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.main-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#table{
+    height: 10vw;
+    width: 40vw;
+    border-color: #9ecaed;
+    box-shadow: 0 0 25px #9ecaed;
+    border-radius: 1.3vw;
+    font-size: 1.2vw;
+    padding: 0.6vw;
+}
+
+.cell {
+    border: 0;
+    margin: 0;
+    padding: 0.7vw;
+    padding-top: 0.5vw;
+}
+
+.button, .new-button{
+  font-size: 1vw;
+  border: none;
+  color: rgb(36, 36, 36);
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: transparent;
+}
+
+
+.new-button{
+    padding-top: 2vw;
+    font-size: 1.5vw;
+}
+
+.button:hover, .new-button:hover{
+    color: white;
+}
+
+.glow {
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #7110f0, 0 0 40px #7110f0, 0 0 50px #7110f0, 0 0 60px #7110f0, 0 0 70px #7110f0;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #7110f0, 0 0 40px #7110f0, 0 0 50px #7110f0, 0 0 60px #7110f0, 0 0 70px #7110f0, 0 0 80px #7110f0;
+    }
+  }
+  
+
+  .field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  #submit-button::after {
+    content: "Add New Watch Item"; 
+  }
+
+  .container{
+    border-color: #9ecaed;
+    box-shadow: 0 0 25px #9ecaed;
+    border-radius: 1.3vw;
+    font-size: 1.2vw;
+    padding: 0.7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .show-container{
+    height: 7vw;
+    width: 11vw;
+  }
+
+  .new-container{
+    height: 10vw;
+    width: 12vw;
+  }
+
+  .edit-container{
+    height: 13vw;
+    width: 12vw;
+  }
+
+  .watched {
+    text-decoration: line-through; 
+  }
+  
+  .not-watched {
+    text-decoration: none; 
+  }
+  

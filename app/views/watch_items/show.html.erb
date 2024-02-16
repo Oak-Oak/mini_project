@@ -1,0 +1,9 @@
+<div class = "main-container">
+    <h1 class = "title glow"><%= @watch_item.title %></h1>
+    <div class = "show-container container">
+        <p class = "label">Genre: <%= @watch_item.genre %></p>
+        <%= link_to 'Edit', edit_watch_item_path(@watch_item), class: "button" %>
+        <%= link_to 'Back', watch_items_path, class: "button"%>
+    </div>
+</div>
+
