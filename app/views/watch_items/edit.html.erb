@@ -1,8 +1,8 @@
 <div class = "main-container">
     <h1 class = "title">Edit Watch Item</h1>
-    <div class = "edit-container container">
-        <%= render 'form' %>
-        <%= link_to 'Show', @watch_item, class: "button"%>
+    <div class = "edit-container container"> #renders form partial
+        <%= render 'form' %> 
+        <%= link_to 'Show', @watch_item, class: "button"%> #generates link for the show action of the current watch object
         <%= link_to 'Back', watch_items_path, class: "button" %>
     </div>
 </div>

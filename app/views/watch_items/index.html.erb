@@ -7,10 +7,10 @@
             <th class = "cell label">Genre</th>
         </tr>
     </thead>
-    <tbody>
-        <% @watch_items.each do |watch_item| %>
+    <tbody> 
+        <% @watch_items.each do |watch_item| %> 
             <tr>
-                <td class = "cell"><%= watch_item.title %></td>
+                <td class = "cell"><%= watch_item.title %></td> 
                 <td class = "cell"><%= watch_item.genre %></td>
                 <td>
                     <%= link_to 'Show', watch_item, class: "button"%>
@@ -19,7 +19,7 @@
                 </td>
             </tr>
         <% end %>
-    </tbody>
+       </tbody>
 </table>
 
     <%= link_to 'Add Title', new_watch_item_path, class: "new-button"%>

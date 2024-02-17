@@ -33,6 +33,7 @@ body {
     border-radius: 1.3vw;
     font-size: 1.2vw;
     padding: 0.6vw;
+    text-align: center;
 }
 
 .cell {
@@ -124,11 +125,4 @@ body {
     width: 12vw;
   }
 
-  .watched {
-    text-decoration: line-through; 
-  }
-  
-  .not-watched {
-    text-decoration: none; 
-  }
   
