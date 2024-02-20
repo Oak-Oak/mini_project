@@ -1,9 +1,21 @@
-<div class = "main-container">
-    <h1 class = "title glow"><%= @watch_item.title %></h1>
-    <div class = "show-container container">
-        <p class = "label">Genre: <%= @watch_item.genre %></p>
-        <%= link_to 'Edit', edit_watch_item_path(@watch_item), class: "button" %>
-        <%= link_to 'Back', watch_items_path, class: "button"%>
-    </div>
-</div>
+<h1 class="title glow"><%= @watch_item.title %></h1>
+<div class="show-main-container">  
 
+    <% if @watch_item.image.attached? %>
+      <%= image_tag rails_blob_url(@watch_item.image), class: "image" %>
+    <% else %>
+      <p>No image available</p>
+    <% end %>
+    
+  <div class="show-container container">
+    <p class="label">Genre: <%= @watch_item.genre %></p>
+
+    <div class="summary">
+      <p><strong>Summary:</strong></p>
+      <%= @watch_item.summary.present? ? @watch_item.summary : "No summary available" %>
+    </div>
+
+    <%= link_to 'Edit', edit_watch_item_path(@watch_item), class: "button" %>
+    <%= link_to 'Back', watch_items_path, class: "button" %>
+  </div>
+</div>

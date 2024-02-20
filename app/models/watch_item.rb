@@ -1,5 +1,7 @@
 class WatchItem < ApplicationRecord
-    validates :title, presence: true
-    validates :genre, presence: true
-  end
-  
+  has_one_attached :image
+
+  validates :title, presence: true
+  validates :genre, presence: true
+  validates :summary, presence: true
+end

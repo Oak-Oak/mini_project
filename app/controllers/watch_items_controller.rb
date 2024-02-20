@@ -45,8 +45,7 @@ class WatchItemsController < ApplicationController
     end
 
     def watch_item_params
-        params.require(:watch_item).permit(:title, :genre)
-    end
-
+        params.require(:watch_item).permit(:title, :genre, :summary, :image)
+      end
 
 end
